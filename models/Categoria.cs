@@ -19,7 +19,7 @@ namespace API.models
     
      public double Teto {get;  set;  }
     
-    public string Descriçao {get; set; }
+    public string Descricao {get; set; }
     
     public DateTime CriadoEm {get; set; }
     

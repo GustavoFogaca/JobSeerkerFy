@@ -1,19 +1,21 @@
-###
-
+###Cria Categoria
 POST https://localhost:5001/api/categoria/create
 Content-Type: application/json
 
 {
-
 "Nome" : "piao",
 "Piso" : 3.5
-
-
 }
 
-
-###
-
-
-
+###Lista Produtos
 GET https://localhost:5001/api/categoria/list
+
+### Busca categoria pelo id
+GET https://localhost:5001/api/categoria/getbyid/1
+
+### Deleta pelo nome da categoria
+DELETE  https://localhost:5001/api/categoria/delete/piao
+
+
+### Altera Categoria da vaga
+PUT https://localhost:5001/api/categoria/update
