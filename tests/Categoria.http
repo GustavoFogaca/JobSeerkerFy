@@ -11,7 +11,7 @@ Content-Type: application/json
 GET https://localhost:5001/api/categoria/list
 
 ### Busca categoria pelo id
-GET https://localhost:5001/api/categoria/getbyid/3
+GET https://localhost:5001/api/categoria/getbyid/2
 
 ### Deleta pelo nome da categoria
 DELETE  https://localhost:5001/api/categoria/delete/piao
@@ -26,3 +26,70 @@ Content-Type: application/json
     "Nome" : "Patrao",
     "Piso" : 4
 }
+
+
+###Cria Usuario
+POST https://localhost:5001/api/usuario/create
+Content-Type: application/json
+
+{
+    
+"Nome" : "Tiago",
+"Sobrenome" : "Brabo",
+"Endereco" : "Rua Capao, bairro Raso",
+"Descricao" : "Conhecimento avancado em ferro"
+
+}
+
+###Lista Usuarios
+GET https://localhost:5001/api/usuario/list
+
+### Busca Usuario pelo id
+GET https://localhost:5001/api/usuario/getbyid/2
+
+### Deleta pelo nome da usuario
+DELETE  https://localhost:5001/api/usuario/delete/Tiago
+
+
+### Altera informaçoes do usuario
+PUT https://localhost:5001/api/usuario/update
+Content-Type: application/json
+
+{
+    "Id": 5,
+    "Nome" : "Gustavo",
+    "Descricao" : "Patrao das finanças"
+}
+
+
+###Cria Vaga
+POST https://localhost:5001/api/vaga/create
+Content-Type: application/json
+
+{
+
+"Nome" : "Vaga",
+"Descricao" : "ferro de passar"
+
+}
+
+###Lista Vagas
+GET https://localhost:5001/api/vaga/list
+
+### Busca Vaga pelo id
+GET https://localhost:5001/api/vaga/getbyid/2
+
+### Deleta vaga pelo nome
+DELETE  https://localhost:5001/api/vaga/delete/Vaga
+
+
+### Altera informaçoes da vaga
+PUT https://localhost:5001/api/vaga/update
+Content-Type: application/json
+
+{
+    "Id": 3,
+    "Nome" : "Uma vaga di pirulin",
+    "Descricao" : "saber muitas coisas da vaga"
+}
+

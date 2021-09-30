@@ -12,6 +12,9 @@ namespace API.Data
    
        //lista de propriedades das classes de modelos que vao virar tabelas no banco
      public DbSet<Categoria> Categorias {get; set;}
+     public DbSet<Usuario> Usuarios {get; set;}
+     public DbSet<Vaga> Vagas {get; set;}
+     
    
     }
 }

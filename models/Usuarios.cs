@@ -5,24 +5,22 @@ namespace API.models
     
 
     
-    public class Categoria
+    public class Usuario
     {
      
      //Construtor
-        public Categoria() => CriadoEm = DateTime.Now;
+        public Usuario() => CriadoEm = DateTime.Now;
     
     // atributos ou propriedades     
      public int Id {get; set;}
-     public string Nome { get; set; }   
-     //Add Vaga class 
-     public double Piso {  get; set; } 
-     public double Teto {get;  set;  }
+     public string Nome { get; set; }    
+     public string Sobrenome {  get; set; } 
+     public string Endereco {get;  set;  }
      public string Descricao {get; set; }
      public DateTime CriadoEm {get; set; }
-
         
      public override string ToString() =>
-      $"Nome: {Nome} | Piso: {Piso:C2} | CriadoEm em: {CriadoEm}";
+      $"Nome: {Nome} | Sobrenome: {Sobrenome} | CriadoEm em: {CriadoEm}";
     
     }
 }
