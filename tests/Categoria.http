@@ -11,7 +11,7 @@ Content-Type: application/json
 GET https://localhost:5001/api/categoria/list
 
 ### Busca categoria pelo id
-GET https://localhost:5001/api/categoria/getbyid/1
+GET https://localhost:5001/api/categoria/getbyid/3
 
 ### Deleta pelo nome da categoria
 DELETE  https://localhost:5001/api/categoria/delete/piao
@@ -19,3 +19,10 @@ DELETE  https://localhost:5001/api/categoria/delete/piao
 
 ### Altera Categoria da vaga
 PUT https://localhost:5001/api/categoria/update
+Content-Type: application/json
+
+{
+    "Id": 2,
+    "Nome" : "Patrao",
+    "Piso" : 4
+}
